@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+body {
+  background-color: var(--mainBG);
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.NFT {
+  width: 290px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cardBG);
+  padding: 23px 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px 10px var(--mainBG);
+}
+
+.nft-pic {
+  width: 245px;
+  height: 275px;
+  border-radius: 15px;
+}
+
+.mid {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.mid h4 {
+  color: var(--white);
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.mid-txt {
+  font-size: 14px;
+  color: var(--softBlue);
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.icon {
+  display: flex;
+  align-items: cetner;
+}
+
+.icon svg {
+  margin-right: 7px;
+}
+
+.icon-text-1 {
+  color: var(--Cyan);
+  font-size: 13px;
+}
+
+.icon-text-2 {
+  color: var(--softBlue);
+  font-size: 13px;
+}
+
+.line {
+  border: 0.25px solid var(--line);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footer img {
+  max-width: 27px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  margin-right: 10px;
+}
+
+.footer p {
+  color: var(--softBlue);
+}
+
+.footer span {
+  color: var(--white);
+  margin-left: 2px;
+}
