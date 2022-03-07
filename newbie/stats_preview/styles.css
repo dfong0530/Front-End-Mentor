@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --VeryDarkBlue: hsl(233, 47%, 7%); /*  main background */
+  --DarkDesaturatedBlue: hsl(244, 38%, 16%); /* card background */
+  --SoftViolet: hsl(277, 64%, 61%); /* accent */
+
+  /*    NEUTRAL    */
+
+  --White: hsl(0, 0%, 100%); /* main heading, stats */
+  --SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.75); /* main paragraph */
+  --MoreTransparentWhite: hsla(0, 0%, 100%, 0.6); /* stat headings */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing {
+  display: flex;
+  width: 70%;
+  height: 55%;
+  margin: 0 auto;
+  background-color: var(--DarkDesaturatedBlue);
+  border-radius: 10px;
+}
+
+.left {
+  flex-basis: 50%;
+  text-align: left;
+  margin: auto;
+}
+
+.left-text {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.left-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.left-text span {
+  color: var(--SoftViolet);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.left-text p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--SlightlyTransparentWhite);
+  font-size: 14px;
+}
+
+.stats-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.stat {
+  margin-right: 30px;
+}
+
+.stat h3 {
+  color: var(--White);
+  font-size: 20px;
+}
+
+.stat p {
+  color: var(--MoreTransparentWhite);
+  font-size: 11px;
+  margin-top: 3px;
+  font-family: "Lexend Deca";
+}
+
+.right {
+  flex-basis: 50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom,
+      hsl(284, 100%, 35%, 0.6),
+      hsl(284, 100%, 35%, 0.6)
+    ),
+    url(images//image-header-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+}
+
+.right img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .landing {
+    flex-direction: column-reverse;
+    height: 85%;
+  }
+
+  .left {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .landing {
+    height: 100%;
+    width: 100%;
+  }
+
+  .left-text {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .left-text h1 {
+    font-size: 23px;
+  }
+
+  .left-text span {
+    font-size: 23px;
+  }
+
+  .left-text p {
+    font-size: 12px;
+  }
+
+  .stats-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat {
+    margin-bottom: 10px;
+  }
+}
