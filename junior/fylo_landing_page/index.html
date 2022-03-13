@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="head">
-      <object data="./images//logo.svg" type=""></object>
+      <object data="./images/logo.svg" type=""></object>
       <nav>
         <ul>
           <li><a href="">Features</a></li>
@@ -24,14 +24,15 @@
       <div class="landing">
         <div class="landing-left">
           <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p>
+          <p class="landing-left-p">
             Fylo stores your most important files in one secure location.
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.
           </p>
           <form action="">
-            <input type="text" placeholder="Enter your email...">
-            <input class="btn" type="submit" value="Get Started">
+            <input id="landing-email" type="text" placeholder="Enter your email...">
+            <button type="button" class="btn" onclick="handleLanding()">Get Started</button>
+            <p id="landing-form-msg">Please check your email</p>
           </form>
         </div>
         <div class="landing-right">
@@ -39,5 +40,17 @@
         </div>
       </div>
     </main>
+    <script>
+
+      function handleLanding(){
+
+        var landingEmail = document.getElementById("landing-email");
+        var landingMsg = document.getElementById("landing-form-msg");
+
+        landingEmail.style.border = "1px solid red";
+        landingMsg.style.display = "block";
+
+      }
+    </script>
   </body>
 </html>
